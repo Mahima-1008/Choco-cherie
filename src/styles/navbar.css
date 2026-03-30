@@ -1,0 +1,49 @@
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  padding: 20px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(245, 235, 224, 0.7);
+  backdrop-filter: blur(10px);
+  z-index: 100;
+}
+
+.logo {
+  font-size: 32px;
+  font-family: 'Playfair Display', serif;
+  color: #3e2723;
+  letter-spacing: 2px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.nav-links li {
+  cursor: pointer;
+  color: #5d4037;
+  transition: 0.3s;
+}
+
+.nav-links li:hover {
+  color: #b76e4c;
+}
+
+.nav-btn {
+  padding: 10px 20px;
+  border: none;
+  background: #3e2723;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.nav-btn:hover {
+  background: #5d4037;
+}

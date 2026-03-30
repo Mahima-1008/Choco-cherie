@@ -1,0 +1,52 @@
+.products {
+  padding: 100px 60px;
+  background: #f5ebe0;
+  text-align: center;
+}
+
+.products h2 {
+  font-size: 40px;
+  color: #3e2723;
+  margin-bottom: 40px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.card {
+  background: #ffffff;
+  padding: 30px;
+  width: 250px;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+  color: #3e2723;
+}
+
+.card p {
+  color: #6d4c41;
+}
+
+.card button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #3e2723;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.card button:hover {
+  background: #5d4037;
+}
