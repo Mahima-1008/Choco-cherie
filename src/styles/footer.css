@@ -1,0 +1,38 @@
+.footer {
+  background: #3e2723;
+  color: #f5ebe0;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+/* BRAND */
+.footer-logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+/* LINKS */
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.footer-links p {
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 14px;
+}
+
+.footer-links p:hover {
+  color: #ffb347;
+}
+
+/* COPYRIGHT */
+.copyright {
+  font-size: 13px;
+  opacity: 0.7;
+}
