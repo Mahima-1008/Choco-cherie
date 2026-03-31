@@ -5,7 +5,7 @@
   padding: 50px 20px;
 }
 
-/* BRAND */
+/* LOGO */
 .footer-logo {
   font-family: 'Playfair Display', serif;
   font-size: 28px;
@@ -21,14 +21,38 @@
   margin-bottom: 20px;
 }
 
-.footer-links p {
-  cursor: pointer;
-  transition: 0.3s;
+.footer-links a {
+  text-decoration: none;
+  color: #f5ebe0;   /* FIXED: no more blue */
   font-size: 14px;
+  transition: 0.3s;
 }
 
-.footer-links p:hover {
+.footer-links a:hover {
+  color: #ffb347;   /* premium gold hover */
+}
+
+/* SOCIAL ICONS */
+.social-icons {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-icons a {
+  color: #f5ebe0;
+}
+
+.social-icons svg {
+  font-size: 22px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.social-icons svg:hover {
   color: #ffb347;
+  transform: scale(1.2);
 }
 
 /* COPYRIGHT */

@@ -11,7 +11,7 @@ export default function Navbar() {
         <li>About</li>
       </ul>
 
-      <button className="nav-btn">Shop Now</button>
+      <button className="nav-btn">Shop</button>
     </nav>
   );
 }

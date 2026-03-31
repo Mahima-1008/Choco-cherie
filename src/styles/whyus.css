@@ -1,0 +1,42 @@
+.whyus {
+  padding: 80px 20px;
+  background: #fff8f2;
+  text-align: center;
+}
+
+.whyus-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 36px;
+  color: #3e2723;
+  margin-bottom: 40px;
+}
+
+.whyus-cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.whyus-card {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  width: 250px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.whyus-card:hover {
+  transform: translateY(-10px);
+}
+
+.whyus-card h3 {
+  margin-bottom: 10px;
+  color: #5d4037;
+}
+
+.whyus-card p {
+  font-size: 14px;
+  color: #6d4c41;
+}

@@ -1,9 +1,29 @@
 .hero {
-  height: 100vh;
+  margin-top: 80px; /* prevents navbar overlap */
+  height: calc(100vh - 80px);
   display: flex;
+  position: relative;
 }
 
-/* LEFT SIDE (TEXT) */
+/* ✨ DIVIDER (premium subtle line) */
+.hero-divider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+
+  background: linear-gradient(
+    to right,
+    transparent,
+    #b76e4c,
+    transparent
+  );
+
+  opacity: 0.6;
+}
+
+/* LEFT SIDE */
 .hero-content {
   width: 50%;
   background: linear-gradient(135deg, #f5ebe0, #e6d3c3);
@@ -13,22 +33,11 @@
   padding: 0 80px;
 }
 
-/* RIGHT SIDE (IMAGE) */
+/* RIGHT IMAGE */
 .hero-image {
-    position: relative;
   width: 50%;
-  height: 100vh;
-  overflow: hidden;
-}
-
-.hero-image::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
   height: 100%;
-  background: linear-gradient(to left, rgba(0,0,0,0.3), transparent);
+  overflow: hidden;
 }
 
 .hero-image img {
@@ -37,7 +46,7 @@
   object-fit: cover;
 }
 
-/* TEXT STYLING */
+/* TEXT */
 .brand {
   font-family: 'Playfair Display', serif;
   font-size: 64px;
@@ -52,7 +61,7 @@
 }
 
 /* BUTTON */
-.hero button {
+.hero-btn {
   margin-top: 25px;
   padding: 12px 28px;
   background: #3e2723;
@@ -63,7 +72,7 @@
   transition: 0.3s;
 }
 
-.hero button:hover {
+.hero-btn:hover {
   background: #5d4037;
   transform: scale(1.05);
 }
