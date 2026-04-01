@@ -1,78 +1,67 @@
 .hero {
-  margin-top: 80px; /* prevents navbar overlap */
-  height: calc(100vh - 80px);
   display: flex;
-  position: relative;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 120px 60px 60px; /* space for navbar */
+  min-height: 100vh;
+
+  background: #f5ebe0;
 }
 
-/* ✨ DIVIDER (premium subtle line) */
-.hero-divider {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 2px;
-
-  background: linear-gradient(
-    to right,
-    transparent,
-    #b76e4c,
-    transparent
-  );
-
-  opacity: 0.6;
-}
-
-/* LEFT SIDE */
-.hero-content {
+/* LEFT TEXT */
+.hero-left {
   width: 50%;
-  background: linear-gradient(135deg, #f5ebe0, #e6d3c3);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 0 80px;
 }
 
-/* RIGHT IMAGE */
-.hero-image {
-  width: 50%;
-  height: 100%;
-  overflow: hidden;
-}
-
-.hero-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-/* TEXT */
-.brand {
+.hero-left h1 {
+  font-size: 60px;
   font-family: 'Playfair Display', serif;
-  font-size: 64px;
   color: #3e2723;
 }
 
-.tagline {
+.hero-left p {
+  font-size: 22px;
+  margin: 20px 0;
   font-family: 'Great Vibes', cursive;
-  font-size: 34px;
-  color: #8b5e3c;
-  margin-top: 10px;
+  color: #6d4c41;
 }
 
-/* BUTTON */
-.hero-btn {
-  margin-top: 25px;
-  padding: 12px 28px;
+.hero-left button {
+  padding: 14px 30px;
+  border-radius: 30px;
+  border: none;
   background: #3e2723;
   color: white;
-  border: none;
-  border-radius: 25px;
   cursor: pointer;
-  transition: 0.3s;
 }
 
-.hero-btn:hover {
-  background: #5d4037;
-  transform: scale(1.05);
+/* RIGHT IMAGE */
+.hero-right {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-right img {
+  width: 90%;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+/* 🔥 HERO IMAGE ANIMATION */
+.hero-right img {
+  animation: floatZoom 6s ease-in-out infinite;
+}
+
+@keyframes floatZoom {
+  0% {
+    transform: scale(1) translateY(0px);
+  }
+  50% {
+    transform: scale(1.05) translateY(-10px);
+  }
+  100% {
+    transform: scale(1) translateY(0px);
+  }
 }

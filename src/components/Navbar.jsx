@@ -9,9 +9,10 @@ export default function Navbar() {
         <li>Home</li>
         <li>Products</li>
         <li>About</li>
+        <li>Contact</li>
       </ul>
 
-      <button className="nav-btn">Shop</button>
+      <button className="shop-btn">Shop</button>
     </nav>
   );
 }

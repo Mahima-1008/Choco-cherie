@@ -16,10 +16,8 @@ export default function Hero() {
 
       {/* RIGHT IMAGE */}
       <div className="hero-image">
-        <img
-          src="https://images.unsplash.com/photo-1511381939415-e44015466834"
-          alt="dark chocolate"
-        />
+       
+        <img src="https://images.unsplash.com/photo-1549007994-cb92caebd54b?q=80&w=1200" alt="chocolate" />
       </div>
     </section>
   );

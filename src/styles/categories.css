@@ -1,0 +1,55 @@
+.categories {
+  padding: 80px 40px;
+  background: #f5ebe0;
+}
+
+.cat-title {
+  text-align: center;
+  font-size: 36px;
+  font-family: 'Playfair Display', serif;
+  color: #3e2723;
+  margin-bottom: 40px;
+}
+
+/* PERFECT GRID FOR 6 ITEMS */
+.cat-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.cat-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.cat-card img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  transition: 0.4s;
+}
+
+/* OVERLAY */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
+  color: white;
+
+  background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+
+  transform: translateY(100%);
+  transition: 0.4s;
+}
+
+.cat-card:hover .overlay {
+  transform: translateY(0);
+}
+
+.cat-card:hover img {
+  transform: scale(1.1);
+}
