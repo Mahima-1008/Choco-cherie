@@ -1,62 +1,47 @@
 .footer {
+  padding: 40px;
   background: #3e2723;
   color: #f5ebe0;
   text-align: center;
-  padding: 50px 20px;
 }
 
-/* LOGO */
-.footer-logo {
-  font-family: 'Playfair Display', serif;
-  font-size: 28px;
-  margin-bottom: 20px;
-}
-
-/* LINKS */
-.footer-links {
+/* 🔥 LINKS IN ONE LINE */
+.links {
   display: flex;
   justify-content: center;
-  gap: 30px;
-  flex-wrap: wrap;
+  gap: 30px; /* spacing between links */
+  flex-wrap: nowrap; /* keep in one line */
   margin-bottom: 20px;
 }
 
-.footer-links a {
-  text-decoration: none;
-  color: #f5ebe0;   /* FIXED: no more blue */
+.links p {
+  cursor: pointer;
+  color: #f5ebe0;
   font-size: 14px;
   transition: 0.3s;
 }
 
-.footer-links a:hover {
-  color: #ffb347;   /* premium gold hover */
+/* HOVER EFFECT */
+.links p:hover {
+  color: #d7ccc8;
 }
 
-/* SOCIAL ICONS */
-.social-icons {
+/* 🔥 SOCIAL ICONS SPACING */
+.socials {
   margin: 20px 0;
   display: flex;
   justify-content: center;
-  gap: 20px;
-}
-
-.social-icons a {
-  color: #f5ebe0;
-}
-
-.social-icons svg {
+  gap: 25px; /* space between icons */
   font-size: 22px;
+}
+
+/* ICON HOVER */
+.socials svg {
   cursor: pointer;
   transition: 0.3s;
 }
 
-.social-icons svg:hover {
-  color: #ffb347;
+.socials svg:hover {
   transform: scale(1.2);
-}
-
-/* COPYRIGHT */
-.copyright {
-  font-size: 13px;
-  opacity: 0.7;
+  color: #d7ccc8;
 }
