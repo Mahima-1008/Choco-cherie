@@ -1,8 +1,8 @@
 import Hero from "../sections/Hero";
 import Categories from "../components/Categories";
 import WhyUs from "../sections/WhyUs";
-import Custom from "../sections/Custom";
-import Contact from "./Contact";
+import Reviews from "../components/Reviews";
+
 
 export default function Home() {
   return (
@@ -10,8 +10,7 @@ export default function Home() {
       <Hero />
       <Categories />
       <WhyUs />
-      <Custom />
-      <Contact />
+       <Reviews />
     </>
   );
 }
