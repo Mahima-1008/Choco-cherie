@@ -1,0 +1,117 @@
+/* MAIN PAGE */
+.story {
+  font-family: 'Poppins', sans-serif;
+  background: #fdfaf6;
+  color: #3e2723;
+}
+
+/* ===== HERO ===== */
+.story-hero {
+  position: relative;
+  height: 70vh;
+
+  background: url("https://images.unsplash.com/photo-1606312619070-d48b4c652a52?q=80&w=1600")
+    center/cover no-repeat;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* HERO TEXT */
+.story-hero-content {
+  position: relative;
+  text-align: center;
+  color: white;
+  max-width: 700px;
+}
+
+.story-hero-content h1 {
+  font-size: 60px;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.story-hero-content p {
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+/* ===== CONTENT ===== */
+.story-content {
+  padding: 100px 20px;
+  max-width: 850px;
+  margin: auto;
+  text-align: center;
+}
+
+.story-content h2 {
+  font-size: 36px;
+  margin-bottom: 25px;
+  font-family: 'Playfair Display', serif;
+
+  color: #c8a96a; /* ✨ GOLD */
+  letter-spacing: 1px;
+}
+
+.story-content p {
+  font-size: 17px;
+  line-height: 1.9;
+  margin-bottom: 25px;
+  color: #5d4037;
+}
+
+/* ===== DIVIDER LINE ===== */
+.story-content::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 3px;
+  background: #f5d27a;
+  margin: 40px auto 0;
+  border-radius: 5px;
+}
+
+/* ===== CTA ===== */
+.story-cta {
+  background: linear-gradient(135deg, #3e2723, #5d4037);
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.story-cta h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+
+  color: #f5d27a; /* ✨ LIGHT GOLD */
+  letter-spacing: 1px;
+}
+
+.story-cta button {
+  padding: 14px 30px;
+  background: #f5d27a;
+  color: #3e2723;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 15px;
+
+  transition: all 0.3s ease;
+}
+
+.story-cta button:hover {
+  transform: scale(1.08);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+.story-content h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #f5d27a;
+  margin: 10px auto;
+}

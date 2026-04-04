@@ -1,18 +1,58 @@
 import "../styles/navbar.css";
+import { Link } from "react-router-dom";
+import { FaSearch } from "react-icons/fa";
 
-export default function Navbar() {
+function Navbar() {
   return (
-    <nav className="navbar">
-      <h2 className="logo">Choco Cherie</h2>
+    <div className="navbar">
+
+      <div className="logo">Choco Cherie</div>
 
       <ul className="nav-links">
-        <li>Home</li>
-        <li>Products</li>
-        <li>About</li>
+
+        {/* ABOUT */}
+        <li className="dropdown">
+          About
+          <ul className="dropdown-menu">
+            <li>
+              <Link to="/our-story">Our Story</Link>
+            </li>
+            <li>Our Craft</li>
+          </ul>
+        </li>
+
+        {/* EXPLORE */}
+        <li className="dropdown">
+          Explore
+          <ul className="dropdown-menu">
+            <li>Collections</li>
+            <li>Seasonal</li>
+          </ul>
+        </li>
+
+        {/* PRODUCTS */}
+        <li className="dropdown">
+          Products
+          <ul className="dropdown-menu">
+            <li>Dark Chocolate</li>
+            <li>Milk Chocolate</li>
+            <li>Gift Boxes</li>
+          </ul>
+        </li>
+
+        <li>Recipes</li>
+        <li>Gifting</li>
         <li>Contact</li>
+
       </ul>
 
-      <button className="shop-btn">Shop</button>
-    </nav>
+      <div className="search">
+        <FaSearch />
+        <span>Search</span>
+      </div>
+
+    </div>
   );
 }
+
+export default Navbar;
