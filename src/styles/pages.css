@@ -1,0 +1,79 @@
+/* PAGE LAYOUT */
+.page {
+  min-height: 100vh;
+  padding: 120px 20px;
+  background: #fdfaf6;
+  display: flex;
+  justify-content: center;
+}
+
+.page-container {
+  max-width: 900px;
+  width: 100%;
+}
+
+/* TITLE */
+.page-title {
+  text-align: center;
+  font-size: 42px;
+  margin-bottom: 40px;
+  color: #3e2723;
+  font-family: 'Playfair Display', serif;
+}
+
+/* 🔥 CARD DESIGN (THIS WAS MISSING EFFECT) */
+.page-card {
+  background: white;
+  padding: 30px;
+  margin-bottom: 25px;
+  border-radius: 16px;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+
+  transition: all 0.4s ease;
+
+  opacity: 0;              /* for animation */
+  transform: translateY(40px);
+}
+
+/* SHOW ANIMATION */
+.page-card.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* HOVER EFFECT */
+.page-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+/* TEXT */
+.page-card h2 {
+  color: #c8a96a;
+  margin-bottom: 10px;
+}
+
+.page-card p {
+  color: #5d4037;
+  line-height: 1.6;
+}
+
+/* CONTACT BUTTON */
+.contact-btn {
+  margin-top: 20px;
+  padding: 12px 25px;
+
+  background: linear-gradient(135deg, #3e2723, #5d4037);
+  color: white;
+
+  border: none;
+  border-radius: 25px;
+
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-btn:hover {
+  transform: scale(1.05);
+}

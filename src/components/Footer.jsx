@@ -1,25 +1,42 @@
 import "../styles/footer.css";
-import { FaInstagram, FaFacebook, FaLinkedin } from "react-icons/fa";
+import { Link } from "react-router-dom";
+import { FaInstagram, FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 
-export default function Footer() {
+function Footer() {
   return (
-    <footer className="footer">
+    <div className="footer">
 
-      <div className="links">
-        <p>Terms & Conditions</p>
-        <p>Terms of Use</p>
-        <p>Privacy Notice</p>
-        <p>Contact Us</p>
-        <p>Accessibility</p>
+      <div className="footer-links">
+
+        <Link to="/terms-conditions">Terms & Conditions</Link>
+        
+        <Link to="/privacy">Privacy Notice</Link>
+        <Link to="/contact">Contact Us</Link>
+        <Link to="/accessibility">Accessibility</Link>
+
       </div>
 
+      {/* SOCIAL ICONS */}
       <div className="socials">
-        <FaInstagram />
-        <FaFacebook />
-        <FaLinkedin />
+
+        <a href="https://instagram.com" target="_blank">
+          <FaInstagram />
+        </a>
+
+        <a href="https://facebook.com" target="_blank">
+          <FaFacebookF />
+        </a>
+
+        <a href="https://linkedin.com" target="_blank">
+          <FaLinkedinIn />
+        </a>
+
       </div>
 
       <p>© 2026 Choco Cherie</p>
-    </footer>
+
+    </div>
   );
 }
+
+export default Footer;

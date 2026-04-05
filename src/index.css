@@ -1,13 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Great+Vibes&display=swap');
+/* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500&display=swap');
 
-body {
-  margin: 0;
-  background: #f5ebe0;
-  font-family: 'Playfair Display', serif;
-  overflow-x: hidden; /* prevents horizontal scroll */
-}
+/* RESET */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  margin: 0;
+  background: #fdfaf6; /* softer premium cream */
+  font-family: 'Poppins', sans-serif;
+  color: #3e2723;
+  overflow-x: hidden;
+}
+
+/* HEADINGS (LUXURY FONT) */
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 0.5px;
+}
+
+/* OPTIONAL SMOOTH SCROLL */
+html {
+  scroll-behavior: smooth;
 }
